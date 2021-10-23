@@ -19,10 +19,7 @@ export default function Best_Brand() {
             <spna className="mx-4">Roti Maker</spna>
             <br />
             <a href="/">
-              <a>
-                {" "}
                 <span className="text-green-400 mx-3">UP to 75% Off</span>
-              </a>
             </a>
           </div>
 
@@ -30,15 +27,12 @@ export default function Best_Brand() {
             <img src={"/bag.jpg"} className="h-36  mt-4" alt="" />
 
             <a>
-              {" "}
               <span className="mx-6">Sling Bags</span>
             </a>
             <br />
 
-            <a href="/">
               <a>
                 <span className="text-green-400 mx-4">Mine 80% Off</span>
-              </a>
             </a>
           </div>
         </div>
@@ -50,10 +44,7 @@ export default function Best_Brand() {
             <span className="mx-4">Roti Maker</span>
             <br />
             <a href="/">
-              <a>
-                {" "}
                 <span className="text-green-400 mx-3">UP to 75% Off</span>
-              </a>
             </a>
           </div>
 
@@ -62,10 +53,7 @@ export default function Best_Brand() {
             <span className="mx-6">Sling Bags</span>
             <br />
             <a href="/">
-              <a>
-                {" "}
                 <span className="text-green-400 mx-4">Mine 80% Off</span>
-              </a>
             </a>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './screens/Home';
 
 if (document.getElementById('app')) {
-    const index = import ('./screens/index');
-    ReactDOM.render(<index/>, document.getElementById('app'));
+    ReactDOM.render(<Home/>, document.getElementById('app'));
 }
 import "tailwindcss/tailwind.css";

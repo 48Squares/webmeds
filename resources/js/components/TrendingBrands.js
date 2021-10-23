@@ -30,10 +30,8 @@ export default function TrendingBrands() {
         </div>
 
         <div>
-          <a href="/discounts">
             <a className="px-6 py-3 bg-regal-blue text-sm text-white rounded-sm uppercase shadow-md">
               View More
-            </a>
           </a>
         </div>
       </div>
