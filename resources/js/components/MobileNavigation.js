@@ -1,7 +1,11 @@
 import React from "react";
 import SideNav from "./SideNav";
-
+import {Link} from 'react-router-dom';
+import MobileSearch from "../screens/search/MobileSearch";
+import { useHistory } from "react-router-dom"
 export default function MobileNavigation(props) {
+    const history = useHistory();
+
   return (
     <nav className="bg-regal-blue text-white md:hidden mobile-menu">
       <div className="container mx-auto pb-2 ">
@@ -70,7 +74,7 @@ export default function MobileNavigation(props) {
         </nav>
 
         <div className="px-2">
-          <a href="/search">
+          {/*<Link to="/search" component={MobileSearch}>*/}
             <div className="flex bg-white h-10 items-center rounded-sm space-x-2">
               <svg
                 className="text-gray-500 w-6 h-6 ml-2 inline-block"
@@ -91,9 +95,10 @@ export default function MobileNavigation(props) {
                 className="flex-grow h-full py-4 text-gray-600 text-sm hover:outline-none focus:outline-none"
                 type="search"
                 placeholder="Search Product, Brand and More"
+                onFocus={() => history.push('search') }
               />
             </div>
-          </a>
+          {/*</Link>*/}
         </div>
       </div>
     </nav>

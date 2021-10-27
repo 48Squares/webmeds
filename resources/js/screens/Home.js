@@ -23,18 +23,16 @@ export default function Home() {
         <div className="bg-indigo-50">
             <MetaHeader/>
 
-            {/*<MobileNavigation*/}
-            {/*    sideNav={sideNav}*/}
-            {/*    callback={sideNavCallback}*/}
-            {/*    onClick={() => setSideNav(!sideNav)}*/}
-            {/*/>*/}
 
             <DesktopNavigation/>
 
-            {/*<DesktopMenuBar/>*/}
-
             <Router>
-
+                <MobileNavigation
+                    sideNav={sideNav}
+                    callback={sideNavCallback}
+                    onClick={() => setSideNav(!sideNav)}
+                />
+                <DesktopMenuBar/>
 
             </Router>
         </div>
