@@ -10,43 +10,35 @@ import FeaturedBrands from "../components/FeaturedBrands";
 import Banner from "../components/Banners/Banner";
 import HomePageSeo from "../components/Seo/HomePageSeo";
 import CopyRight from "../components/etc/CopyRight";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 
 export default function Home() {
-  const [sideNav, setSideNav] = useState(false);
+    const [sideNav, setSideNav] = useState(false);
 
-  const sideNavCallback = function () {
-    setSideNav(false);
-  };
+    const sideNavCallback = function () {
+        setSideNav(false);
+    };
 
-  return (
-    <div className="bg-indigo-50">
-      <MetaHeader />
+    return (
+        <div className="bg-indigo-50">
+            <MetaHeader/>
 
-      <MobileNavigation
-        sideNav={sideNav}
-        callback={sideNavCallback}
-        onClick={() => setSideNav(!sideNav)}
-      />
+            {/*<MobileNavigation*/}
+            {/*    sideNav={sideNav}*/}
+            {/*    callback={sideNavCallback}*/}
+            {/*    onClick={() => setSideNav(!sideNav)}*/}
+            {/*/>*/}
 
-      <DesktopNavigation />
+            <DesktopNavigation/>
 
-      <DesktopMenuBar />
+            {/*<DesktopMenuBar/>*/}
 
-      <DesktopSlider />
+            <Router>
 
-      <TrendingBrands />
 
-      <TrendingProducts />
-
-      <FeaturedBrands />
-
-      <Banner />
-
-      <HomePageSeo />
-
-      <CopyRight />
-    </div>
-  );
+            </Router>
+        </div>
+    );
 }
 
 

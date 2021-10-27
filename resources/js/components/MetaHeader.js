@@ -20,7 +20,7 @@ export default function MetaHeader() {
         <meta name="theme-color" content="teal" />
         <meta
           key="description"
-          content="Webmeds is multivendor medical platform allowing every medical vendor to sell medicine with peace of mind."
+          content="Webmeds is  medical platform allowing every medical vendor to sell medicine with peace of mind."
         />
     </>
   );
