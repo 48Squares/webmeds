@@ -95,7 +95,7 @@ export default function MobileNavigation(props) {
                 className="flex-grow h-full py-4 text-gray-600 text-sm hover:outline-none focus:outline-none"
                 type="search"
                 placeholder="Search Product, Brand and More"
-                onFocus={() => history.push('search') }
+                onFocus={() => history.push('/search') }
               />
             </div>
           {/*</Link>*/}

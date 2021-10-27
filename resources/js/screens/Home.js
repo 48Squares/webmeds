@@ -10,7 +10,8 @@ import FeaturedBrands from "../components/FeaturedBrands";
 import Banner from "../components/Banners/Banner";
 import HomePageSeo from "../components/Seo/HomePageSeo";
 import CopyRight from "../components/etc/CopyRight";
-import {BrowserRouter as Router, Link} from "react-router-dom";
+import {BrowserRouter, BrowserRouter as Router, Link, Route} from "react-router-dom";
+import MobileSearch from "./search/MobileSearch";
 
 export default function Home() {
     const [sideNav, setSideNav] = useState(false);
@@ -21,20 +22,21 @@ export default function Home() {
 
     return (
         <div className="bg-indigo-50">
-            <MetaHeader/>
+            <BrowserRouter>
+                <MetaHeader/>
 
+                <Route path="/search" component={MobileSearch}/>
+                <DesktopNavigation/>
 
-            <DesktopNavigation/>
-
-            <Router>
                 <MobileNavigation
                     sideNav={sideNav}
                     callback={sideNavCallback}
                     onClick={() => setSideNav(!sideNav)}
                 />
+
                 <DesktopMenuBar/>
 
-            </Router>
+            </BrowserRouter>
         </div>
     );
 }

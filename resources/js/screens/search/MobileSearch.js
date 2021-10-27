@@ -1,6 +1,8 @@
 import React from "react";
+import {useHistory} from "react-router-dom";
 
 export default function MobileSearch() {
+    const history = useHistory();
 
     const oldSearches = [
         'Cider', 'Face Wash', 'Baby Oil', 'Honey'
@@ -10,7 +12,7 @@ export default function MobileSearch() {
         <div>
             <div className="px-2 py-2 bg-white">
                 <div className="flex bg-white h-10 items-center rounded-sm space-x-2">
-                    <div onClick={() => Router.back()}>
+                    <div onClick={() => history.goBack()}>
                         <svg className="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                              viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
