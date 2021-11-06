@@ -172,23 +172,5 @@ export default function Product() {
     );
 }
 
-export async function getStaticProps() {
-    return {
-        props: {
-            product: {
-                title:
-                    "Wildcraft HypaShield W95 Reusable Outdoor Protection Respirator Black Large Mask",
-                price: "190",
-                original_price: "200",
-                discount: "5%",
-                rating: "3.5",
-                rating_count: "335",
-                media: [
-                    "https://res.cloudinary.com/du8msdgbj/image/upload/l_watermark_346,w_120,h_120/a_ignore,w_120,h_120,c_fit,q_auto,f_auto/v1601232397/cropped/z5ppd1fjsees0h0sgkqh.png",
-                    "https://res.cloudinary.com/du8msdgbj/image/upload/l_watermark_346,w_120,h_120/a_ignore,w_120,h_120,c_fit,q_auto,f_auto/v1601232375/cropped/qefs3rw7bxefxfunkcbl.png",
-                    "https://res.cloudinary.com/du8msdgbj/image/upload/l_watermark_346,w_120,h_120/a_ignore,w_120,h_120,c_fit,q_auto,f_auto/v1601232391/cropped/u7xplfmdyvhuaglezgno.png",
-                ],
-            },
-        },
-    };
-}
+
+

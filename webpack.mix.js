@@ -11,8 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+// mix.js('resources/js/app.js', 'public/js')
+//     .react()
+//     .postCss("resources/css/app.css", "public/css", [
+//         require("tailwindcss"),
+//     ]);
+
+mix.js('resources/views/dashboard/js/bootstrap.js', 'public/dashboard/js/app.js')
     .react()
-    .postCss("resources/css/app.css", "public/css", [
+    .postCss("resources/views/dashboard/css/app.css", "public/dashboard/css", [
         require("tailwindcss"),
     ]);
