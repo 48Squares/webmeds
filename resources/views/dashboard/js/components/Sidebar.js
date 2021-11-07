@@ -2,14 +2,13 @@ import React from 'react';
 
 export default function Sidebar() {
     return (
-        <div id="sideBar" className="relative flex flex-col flex-wrap bg-white border-r border-gray-300 p-6 flex-none w-64 md:-ml-64 md:fixed md:top-0 md:z-30 md:h-screen md:shadow-xl animated faster">
+        <div id="sideBar" className="relative flex flex-col flex-wrap bg-white border-r border-gray-300 p-6 flex-none w-64  fixed top-0z-30 h-screen shadow-xl animated faster">
 
 
             <div className="flex flex-col">
-
-                <div className="text-right hidden md:block mb-4">
+                <div className="text-right block mb-4">
                     <button id="sideBarHideBtn">
-                        <i className="fad fa-times-circle"></i>
+                        <i className="fad fa-times-circle"/>
                     </button>
                 </div>
 

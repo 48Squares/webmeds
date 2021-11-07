@@ -11,11 +11,11 @@ import AjaxProgressBar from "./components/AjaxProgressBar";
 export default function App() {
     return (
         <>
-            <AjaxProgressBar/>
+
             <Navbar/>
             <div className="h-screen flex flex-row flex-wrap">
                 <Sidebar/>
-
+                <AjaxProgressBar/>
                 <div className="bg-gray-100 flex-1 p-6 md:mt-16">
                     <BrowserRouter>
                         <Routes>
